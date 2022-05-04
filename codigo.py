@@ -3,11 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#df = pd.DataFrame(np.random.randint(0,260,size=(100, 1)), columns=["Peso"])
-valores = [45, 67, 76, 120, 34]
-df = pd.DataFrame({"Peso": valores})
+df = pd.DataFrame(np.random.randint(0,200,size=(100, 1)), columns=["Peso"])
 
-#Calcular la media sin la funcion mean(), a mano chavales
+#Calcular la media sin la funcion mean()
 def calculoMedia():
     suma = 0
     for i in df["Peso"]:
